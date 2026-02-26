@@ -43,11 +43,16 @@ The objective of this analysis is to:
 
 | Features | Description | Data types |
 | -------- | -------- | -------- | 
-
+| Date | The specific trading day. Format is MM/DD/YYYY. | Object | 
+| Close/Last | The final price at which the stock traded when the market closed. (Note: These currently contain $ symbols, which usually require cleaning for analysis). | Object | 
+| Volume | The total number of shares traded during that specific day. | int64  | 
+| Open | The price at which the stock first traded when the market opened that morning. | Object | 
+| High | The highest price the stock reached during that trading session. | Object | 
+| Low | The lowest price the stock dropped to during that trading session. | Object | 
 
 ### Tools
 - Excel : Google Sheets - Check for data types, Table formatting
-- Python: Google Colab - Data Preparation and pre-processing, Exploratory Data Analysis, Descriptive Statistics, inferential Statistics, Data manipulation and Analysis(Numpy, Pandas),Visualization (Matplotlib, Seaborn), Feature Engineering, Hypothesis Testing
+- Python: Google Colab - Data Preparation and pre-processing, Exploratory Data Analysis, Descriptive Statistics, inferential Statistics, Data manipulation,Visualization, Feature Engineering, Machine learning, Deep learning
   
 ### Analysis
 1). Python
